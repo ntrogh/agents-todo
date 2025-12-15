@@ -5,39 +5,39 @@
 }
 
 :root {
-    --bg-gradient-start: #6366f1;
-    --bg-gradient-end: #8b5cf6;
-    --container-bg: #ffffff;
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
-    --input-border: #e5e7eb;
-    --input-focus: #8b5cf6;
-    --btn-primary: #8b5cf6;
-    --btn-primary-hover: #7c3aed;
-    --btn-delete: #ef4444;
-    --btn-delete-hover: #dc2626;
-    --todo-item-bg: #f9fafb;
-    --todo-item-hover: #f3f4f6;
-    --shadow-color: rgba(139, 92, 246, 0.15);
-    --shadow-hover: rgba(139, 92, 246, 0.3);
+    --bg-gradient-start: #8b7355;
+    --bg-gradient-end: #6b5d4f;
+    --container-bg: #faf8f5;
+    --text-primary: #3e3832;
+    --text-secondary: #8a7f72;
+    --input-border: #e5e0d8;
+    --input-focus: #8b7355;
+    --btn-primary: #8b7355;
+    --btn-primary-hover: #756147;
+    --btn-delete: #c7756d;
+    --btn-delete-hover: #b26159;
+    --todo-item-bg: #f5f2ed;
+    --todo-item-hover: #eee9e1;
+    --shadow-color: rgba(139, 115, 85, 0.15);
+    --shadow-hover: rgba(139, 115, 85, 0.3);
 }
 
 body.dark-theme {
-    --bg-gradient-start: #1e1b4b;
-    --bg-gradient-end: #581c87;
-    --container-bg: #1f2937;
-    --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
-    --input-border: #374151;
-    --input-focus: #a78bfa;
-    --btn-primary: #a78bfa;
-    --btn-primary-hover: #8b5cf6;
-    --btn-delete: #f87171;
-    --btn-delete-hover: #ef4444;
-    --todo-item-bg: #374151;
-    --todo-item-hover: #4b5563;
-    --shadow-color: rgba(167, 139, 250, 0.15);
-    --shadow-hover: rgba(167, 139, 250, 0.3);
+    --bg-gradient-start: #3e3832;
+    --bg-gradient-end: #2a2621;
+    --container-bg: #2f2b26;
+    --text-primary: #f5f2ed;
+    --text-secondary: #a39989;
+    --input-border: #4a433b;
+    --input-focus: #a68b6a;
+    --btn-primary: #a68b6a;
+    --btn-primary-hover: #8b7355;
+    --btn-delete: #d4877f;
+    --btn-delete-hover: #c7756d;
+    --todo-item-bg: #3a3530;
+    --todo-item-hover: #44403a;
+    --shadow-color: rgba(166, 139, 106, 0.15);
+    --shadow-hover: rgba(166, 139, 106, 0.3);
 }
 
 body {
@@ -257,13 +257,13 @@ h1 {
     font-size: 14px;
     font-weight: 500;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.2);
+    box-shadow: 0 2px 6px rgba(199, 117, 109, 0.2);
 }
 
 .delete-btn:hover {
     background: var(--btn-delete-hover);
     transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.3);
+    box-shadow: 0 4px 10px rgba(199, 117, 109, 0.3);
 }
 
 .delete-btn:active {
