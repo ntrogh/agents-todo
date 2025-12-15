@@ -5,6 +5,9 @@ const todoList = document.getElementById('todoList');
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.querySelector('.theme-icon');
 
+// Animation constants
+const DELETE_ANIMATION_DURATION = 300; // matches CSS animation (0.3s)
+
 // Add todo function
 function addTodo() {
     const todoText = todoInput.value.trim();
@@ -36,8 +39,11 @@ function addTodo() {
     deleteBtn.className = 'delete-btn';
     deleteBtn.textContent = 'Delete';
     deleteBtn.onclick = function() {
-        li.remove();
-        checkEmpty();
+        li.style.animation = 'todoSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+        setTimeout(() => {
+            li.remove();
+            checkEmpty();
+        }, DELETE_ANIMATION_DURATION);
     };
     
     // Append elements
