@@ -36,8 +36,11 @@ function addTodo() {
     deleteBtn.className = 'delete-btn';
     deleteBtn.textContent = 'Delete';
     deleteBtn.onclick = function() {
-        li.remove();
-        checkEmpty();
+        li.style.animation = 'todoSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+        setTimeout(() => {
+            li.remove();
+            checkEmpty();
+        }, 300);
     };
     
     // Append elements
