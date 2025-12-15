@@ -107,12 +107,12 @@ h1 {
 
 .theme-toggle:hover {
     background: var(--btn-primary-hover);
-    transform: scale(1.05) rotate(15deg);
+    transform: scale(1.05);
     box-shadow: 0 6px 16px var(--shadow-hover);
 }
 
 .theme-toggle:active {
-    transform: scale(0.95) rotate(15deg);
+    transform: scale(0.95);
 }
 
 .theme-icon {
@@ -322,12 +322,17 @@ h1 {
 
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+    .container,
+    .todo-item,
+    .empty-message,
+    .theme-toggle,
+    #todoInput,
+    #addBtn,
+    .delete-btn,
+    .todo-checkbox,
+    .todo-text {
+        animation-duration: 0s !important;
+        transition-duration: 0s !important;
     }
 }
 
